@@ -1,162 +1,94 @@
-🏥 Hospital Management System
+# 🏥 Hospital Management System
 
+## 📘 Introduction
+The **Hospital Management System (HMS)** is designed to efficiently manage hospital operations such as patient registration, doctor appointments, billing, and record maintenance. It ensures smooth communication between patients, doctors, and administrative staff through a centralized database.
 
+---
 
+## 🚀 Need for Database Management System
+In hospitals, manual record keeping is inefficient and error-prone. A **Database Management System (DBMS)** helps in:
+- Storing patient, doctor, and staff data securely
+- Avoiding duplication of records
+- Enabling quick data retrieval and updates
+- Maintaining data consistency and integrity
 
+---
 
+## 🏗️ System Architecture
+The HMS follows a **3-tier architecture**:
 
+1. **Presentation Layer (Frontend):**  
+   - Interface for patients, doctors, and staff.  
+   - Built using HTML, CSS, JavaScript.
 
+2. **Application Layer (Backend):**  
+   - Handles logic for login, registration, appointments, billing, etc.  
+   - Developed using PHP / Python / Java (based on your implementation).
 
-A structured mini-project built to demonstrate Database Management System (DBMS) and MySQL concepts through a real-world hospital management scenario.
+3. **Database Layer:**  
+   - Stores all hospital-related data.  
+   - Implemented using **MySQL / PostgreSQL**.
 
-📘 Overview
+---
 
-The Hospital Management System (HMS) is a database-backed mini project designed to simplify hospital data management and demonstrate key DBMS and MySQL concepts.
-It efficiently handles patient records, doctor details, appointments, prescriptions, and billing through a centralized system.
+## 🗃️ Database Design
+The database consists of multiple interconnected tables:
 
-🎯 Goal: To provide an easy-to-manage database-driven solution that reflects real-world healthcare operations and helps understand relational database principles.
+### **Main Entities:**
+- **Patient** (`patient_id`, `name`, `age`, `gender`, `contact`, `address`)
+- **Doctor** (`doctor_id`, `name`, `specialization`, `contact`, `availability`)
+- **Appointment** (`appointment_id`, `patient_id`, `doctor_id`, `date`, `time`, `status`)
+- **Billing** (`bill_id`, `patient_id`, `amount`, `date`, `payment_status`)
+- **Staff** (`staff_id`, `name`, `designation`, `contact`)
 
-✨ Features
+### **ER Diagram Overview:**
+- A **patient** can book multiple **appointments**.  
+- Each **appointment** is associated with one **doctor**.  
+- **Billing** is linked to **patients** after consultations.
 
-👨‍⚕️ Doctor & Patient Registration
+---
 
-📅 Appointment Scheduling
+## ⚙️ Features
+✅ Patient registration and management  
+✅ Doctor scheduling and specialization tracking  
+✅ Appointment booking and updates  
+✅ Billing and report generation  
+✅ Secure login for admin, doctor, and staff  
+✅ Search and filter functionality  
 
-💊 Prescription & Medicine Management
+---
 
-💰 Billing & Payment Tracking
+## 🧩 Normalization
+The database is normalized to **3rd Normal Form (3NF)** to:
+- Eliminate redundancy  
+- Ensure data integrity  
+- Simplify maintenance and updates  
 
-🗄️ Centralized MySQL Database
+---
 
-🔐 Role-Based Access (optional extension)
+## 🧠 Future Enhancements
+- Integration of AI-based diagnosis suggestions  
+- Cloud database for scalability  
+- Real-time notifications and SMS updates  
+- Data analytics dashboard for hospital insights  
 
-🧰 Tech Stack
-Layer	Technology Used
-Frontend	HTML, CSS (optional)
-Backend	Python (Flask / Tkinter / CLI)
-Database	MySQL
-Concepts Used	ER Model, Normalization, Relational Model, Codd’s Rules
+---
 
-🧱 System Architecture
-graph TD
-    UI["User Interface (Frontend)"]
-    APP["Application Layer (Python Backend)"]
-    DB["Database Layer (MySQL)"]
-    AUTH["Auth & Validation"]
-    MODS["Modules: Appointments, Billing, Patients"]
+## 👥 Team Members
+| Name | Role |
+|------|------|
+| Member 1 | ER Diagram & Data Modeling |
+| Member 2 | Normalization & Queries |
+| Member 3 | Frontend & UI Design |
+| Member 4 | Backend Integration & Testing |
 
-    UI --> APP
-    APP --> AUTH
-    APP --> MODS
-    APP --> DB
+---
 
-🧩 Database Design
+## 🧾 References
+- Database System Concepts – Silberschatz, Korth  
+- MySQL Documentation  
+- W3Schools & GeeksforGeeks  
 
-The database follows 3NF normalization and referential integrity principles to ensure data consistency and minimal redundancy.
+---
 
-Key Tables
-
-patients – stores patient details
-
-doctors – maintains doctor profiles and specializations
-
-appointments – tracks appointment scheduling and timing
-
-prescriptions – links medicines with patient treatment
-
-billing – records payments, costs, and receipts
-
-Concepts Implemented
-
-✅ ER Modeling
-✅ Primary & Foreign Keys
-✅ Normalization (up to 3NF)
-✅ SQL Joins and Constraints
-
-🧠 Sample ER Diagram
-erDiagram
-    PATIENT ||--o{ APPOINTMENT : books
-    DOCTOR ||--o{ APPOINTMENT : attends
-    PATIENT ||--o{ PRESCRIPTION : receives
-    PRESCRIPTION ||--|{ MEDICINE : includes
-    PATIENT ||--o{ BILLING : billed
-
-    PATIENT {
-        int patient_id PK
-        string name
-        string contact
-        string gender
-    }
-
-    DOCTOR {
-        int doctor_id PK
-        string name
-        string specialization
-    }
-
-    APPOINTMENT {
-        int appointment_id PK
-        int doctor_id FK
-        int patient_id FK
-        date appointment_date
-    }
-
-    PRESCRIPTION {
-        int prescription_id PK
-        int patient_id FK
-        string diagnosis
-    }
-
-    BILLING {
-        int bill_id PK
-        int patient_id FK
-        float total_amount
-    }
-
-🚀 How to Run
-1️⃣ Clone the Repository
-git clone https://github.com/ojasviborkar/Hospital-Management-System.git
-cd Hospital-Management-System
-
-2️⃣ Set Up the Database
-
-Open MySQL Workbench or Command Line.
-
-Create a database named hospital_db.
-
-Import your SQL schema file (if available):
-
-SOURCE hospital_db.sql;
-
-3️⃣ Install Dependencies
-pip install mysql-connector-python
-pip install flask
-
-4️⃣ Run the Application
-python app.py
-
-5️⃣ Access the System
-
-Open your browser and visit:
-👉 http://localhost:5000
-
-👨‍💻 Team Members
-Name	Role
-Ojasvi Borkar	Database Design & Documentation
-Piyush Dhane	Backend Development
-Sushant Dhawanjewar	Frontend / Integration
-Sharwari Dhopte	Testing & Validation
-🌟 Future Enhancements
-
-Integration with QR-based patient ID
-
-Login authentication system for doctors & admin
-
-Email/SMS appointment reminders
-
-Data visualization dashboard using Python libraries
-
-🧾 License
-
-This project is created for academic learning purposes.
-Feel free to modify, enhance, and extend it for educational or research use.
+> 💡 *This Hospital Management System aims to simplify hospital workflows and create a reliable, secure digital healthcare environment.*
