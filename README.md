@@ -44,17 +44,17 @@ It efficiently handles **patient records**, **doctor details**, **appointments**
 
 ```mermaid
 graph TD
-  UI[User Interface (Frontend)]
-  APP[Application Layer (Python Backend)]
-  DB[Database Layer (MySQL)]
-  AUTH[Auth & Validation]
-  MODS[Modules: Appointments, Billing, Patients]
+    UI[User Interface (Frontend)]
+    APP[Application Layer (Python Backend)]
+    DB[Database Layer (MySQL)]
+    AUTH[Auth & Validation]
+    MODS[Modules: Appointments, Billing, Patients]
 
-  UI --> APP
-  APP --> DB
-  APP --> AUTH
-  APP --> MODS
-  DB -->|store/retrieve| MODS
+    UI --> APP
+    APP --> AUTH
+    APP --> MODS
+    APP --> DB
+
 
 🧠 The user interacts with the Python backend, which communicates with the MySQL database to manage and display hospital data efficiently.
 
