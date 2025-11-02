@@ -36,6 +36,7 @@ Frontend	HTML, CSS (optional)
 Backend	Python (Flask / Tkinter / CLI)
 Database	MySQL
 Concepts Used	ER Model, Normalization, Relational Model, Codd’s Rules
+
 🧱 System Architecture
 graph TD
     UI["User Interface (Frontend)"]
