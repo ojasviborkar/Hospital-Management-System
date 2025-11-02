@@ -54,15 +54,10 @@ graph TD
     APP --> AUTH
     APP --> MODS
     APP --> DB
-
-
-🧠 The user interacts with the Python backend, which communicates with the MySQL database to manage and display hospital data efficiently.
-
 🧩 Database Design
 The database follows 3NF normalization and referential integrity principles to ensure data consistency and minimal redundancy.
 
 Key Tables:
-
 patients – stores patient details
 
 doctors – maintains doctor profiles and specializations
@@ -121,14 +116,12 @@ erDiagram
         float total_amount
     }
 🚀 How to Run
-Clone the Repository
-
+1️⃣ Clone the Repository
 bash
 Copy code
 git clone https://github.com/ojasviborkar/Hospital-Management-System.git
 cd Hospital-Management-System
-Set Up the Database
-
+2️⃣ Set Up the Database
 Open MySQL Workbench or Command Line.
 
 Create a database named hospital_db.
@@ -138,19 +131,16 @@ Import your SQL schema file (if available):
 sql
 Copy code
 SOURCE hospital_db.sql;
-Install Dependencies
-
+3️⃣ Install Dependencies
 bash
 Copy code
 pip install mysql-connector-python
 pip install flask
-Run the Application
-
+4️⃣ Run the Application
 bash
 Copy code
 python app.py
-Access the System
-
+5️⃣ Access the System
 Open your browser and visit:
 👉 http://localhost:5000
 
@@ -172,4 +162,4 @@ Data visualization dashboard using Python libraries
 
 🧾 License
 This project is created for academic learning purposes.
-Feel free to modify, enhance, and extend it for educational or research use
+Feel free to modify, enhance, and extend it for educational or research use.
