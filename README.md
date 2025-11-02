@@ -75,14 +75,12 @@ The database is normalized to **3rd Normal Form (3NF)** to:
 ---
 
 ## 👥 Team Members
-| Name | Role |
-|------|------|
-| Member 1 | ER Diagram & Data Modeling |
-| Member 2 | Normalization & Queries |
-| Member 3 | Frontend & UI Design |
-| Member 4 | Backend Integration & Testing |
-
----
+| **Member** | **Role** | **Main Responsibility** | **Deliverables** |
+|:------------|:----------|:-------------------------|:------------------|
+| **Ojasvi Borkar** | Project Lead & Integrator | Final Integration, ER + EER Diagram, SQL database creation, Report compilation | Final ER/EER Diagram, SQL setup, coordinated report |
+| **Sharwari Dhopte** | Schema & Normalization Expert | Normalization (1NF → 4NF), Functional Dependencies, Minimal Cover | Normalization report + clean relational schema |
+| **Sushant Dhawanjewar** | SQL & PL/SQL Developer | Writing SQL queries, joins, aggregate, triggers, procedures, functions | 10 SQL queries + 2 triggers + 2 procedures + 1 function |
+| **Piyush Dhane** | Advanced DBMS + Documentation Expert | Transaction management, indexing, NoSQL, Data warehousing, final write-up | ACID, indexing examples, NoSQL/OLAP-OLTP explanation |
 
 ## 🧾 References
 - Database System Concepts – Silberschatz, Korth  
