@@ -40,14 +40,22 @@ It efficiently handles **patient records**, **doctor details**, **appointments**
 
 ---
 
-## 🧱 System Architecture  
+## 🧱 System Architecture
 
 ```mermaid
-flowchart TD
-    A[User Interface<br>(HTML/CSS or CLI)] --> B[Python Backend<br>(Flask / Tkinter)]
-    B -->|SQL Queries| C[(MySQL Database)]
-    C -->|Returns Data| B
-    B -->|Processed Output| A
+graph TD
+  UI[User Interface (Frontend)]
+  APP[Application Layer (Python Backend)]
+  DB[Database Layer (MySQL)]
+  AUTH[Auth & Validation]
+  MODS[Modules: Appointments, Billing, Patients]
+
+  UI --> APP
+  APP --> DB
+  APP --> AUTH
+  APP --> MODS
+  DB -->|store/retrieve| MODS
+
 🧠 The user interacts with the Python backend, which communicates with the MySQL database to manage and display hospital data efficiently.
 
 🧩 Database Design
