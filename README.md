@@ -1,92 +1,112 @@
 # 🏥 Hospital Management System
 
-## 📘 Introduction
-The **Hospital Management System (HMS)** is designed to efficiently manage hospital operations such as patient registration, doctor appointments, billing, and record maintenance. It ensures smooth communication between patients, doctors, and administrative staff through a centralized database.
+## 📖 Overview
+The **Hospital Management System (HMS)** is designed to automate and simplify hospital operations.  
+It integrates patient, doctor, staff, appointment, billing, and lab data within a unified database system.  
+The system provides both a **web-based interface** for hospital staff and a **mobile app** for patients, ensuring seamless interaction between both ends.  
+
+Additionally, it includes an **AI-based health suggestion module** that predicts possible conditions based on symptoms provided by patients.
 
 ---
 
-## 🚀 Need for Database Management System
-In hospitals, manual record keeping is inefficient and error-prone. A **Database Management System (DBMS)** helps in:
-- Storing patient, doctor, and staff data securely
-- Avoiding duplication of records
-- Enabling quick data retrieval and updates
-- Maintaining data consistency and integrity
+## 👥 Team Members & Responsibilities
+
+### 👩‍💻 Ojasvi — Team Leader
+- Established the **project foundation and database structure**
+- Developed the **Flutter mobile application** for patients  
+- Handled **GitHub integration, branch merging, and testing**
+- Oversaw the **overall workflow and final deployment**
 
 ---
 
-## 🏗️ System Architecture
-The HMS follows a **3-tier architecture**:
-
-1. **Presentation Layer (Frontend):**  
-   - Interface for patients, doctors, and staff.  
-   - Built using HTML, CSS, JavaScript.
-
-2. **Application Layer (Backend):**  
-   - Handles logic for login, registration, appointments, billing, etc.  
-   - Developed using PHP / Python / Java (based on your implementation).
-
-3. **Database Layer:**  
-   - Stores all hospital-related data.  
-   - Implemented using **MySQL / PostgreSQL**.
+### 🧑‍💻 Member 1
+- Designed and implemented the **website frontend** using HTML, CSS, JavaScript, and Bootstrap  
+- Created the **dashboard interface** for hospital staff  
+- Integrated frontend with the backend via API  
+- Ensured **responsive and user-friendly UI**
 
 ---
 
-## 🗃️ Database Design
-The database consists of multiple interconnected tables:
-
-### **Main Entities:**
-- **Patient** (`patient_id`, `name`, `age`, `gender`, `contact`, `address`)
-- **Doctor** (`doctor_id`, `name`, `specialization`, `contact`, `availability`)
-- **Appointment** (`appointment_id`, `patient_id`, `doctor_id`, `date`, `time`, `status`)
-- **Billing** (`bill_id`, `patient_id`, `amount`, `date`, `payment_status`)
-- **Staff** (`staff_id`, `name`, `designation`, `contact`)
-
-### **ER Diagram Overview:**
-- A **patient** can book multiple **appointments**.  
-- Each **appointment** is associated with one **doctor**.  
-- **Billing** is linked to **patients** after consultations.
+### 👨‍💻 Member 2
+- Developed the **backend logic** and **database operations (MySQL)**  
+- Created **SQL queries, triggers, and stored procedures**  
+- Built API endpoints for web and mobile integration  
+- Managed **server-side testing and debugging**
 
 ---
 
-## ⚙️ Features
-✅ Patient registration and management  
-✅ Doctor scheduling and specialization tracking  
-✅ Appointment booking and updates  
-✅ Billing and report generation  
-✅ Secure login for admin, doctor, and staff  
-✅ Search and filter functionality  
+### 👩‍💻 Member 3
+- Designed the **ER Diagram, DFD, and UML system documentation**  
+- Contributed to project **reports and presentation**  
+- Developed the **AI-based Health Suggestion System** using machine learning  
+- Integrated AI model with backend for real-time suggestions
 
 ---
 
-## 🧩 Normalization
-The database is normalized to **3rd Normal Form (3NF)** to:
-- Eliminate redundancy  
-- Ensure data integrity  
-- Simplify maintenance and updates  
+## 🧩 System Modules
+| Module | Description |
+|--------|-------------|
+| **Patient Management** | Manage patient records, personal details, and visit history |
+| **Doctor Management** | Maintain doctor profiles, specialization, and schedules |
+| **Staff Management** | Register and monitor hospital staff details |
+| **Appointment Scheduling** | Book, modify, and cancel appointments |
+| **Billing System** | Generate and manage patient bills and payment records |
+| **Lab Reports** | Upload, store, and access lab test results |
+| **AI Health Suggestion** | Predicts possible health conditions from symptoms |
 
 ---
 
-## 🧠 Future Enhancements
-- Integration of AI-based diagnosis suggestions  
-- Cloud database for scalability  
-- Real-time notifications and SMS updates  
-- Data analytics dashboard for hospital insights  
+## 🧠 AI Health Suggestion Module
+- Built using **Python (scikit-learn, pandas, numpy)**  
+- Implements a **symptom-to-disease prediction model** (Decision Tree / Logistic Regression)  
+- Returns top 3 probable health conditions with preventive measures  
+- Connected to both **web** and **mobile app** via backend API  
 
 ---
 
-## 👥 Team Members
-| **Member** | **Role** | **Main Responsibility** | **Deliverables** |
-|:------------|:----------|:-------------------------|:------------------|
-| **Ojasvi Borkar** | Project Lead & Integrator | Final Integration, ER + EER Diagram, SQL database creation, Report compilation | Final ER/EER Diagram, SQL setup, coordinated report |
-| **Sharwari Dhopte** | Schema & Normalization Expert | Normalization (1NF → 4NF), Functional Dependencies, Minimal Cover | Normalization report + clean relational schema |
-| **Sushant Dhawanjewar** | SQL & PL/SQL Developer | Writing SQL queries, joins, aggregate, triggers, procedures, functions | 10 SQL queries + 2 triggers + 2 procedures + 1 function |
-| **Piyush Dhane** | Advanced DBMS + Documentation Expert | Transaction management, indexing, NoSQL, Data warehousing, final write-up | ACID, indexing examples, NoSQL/OLAP-OLTP explanation |
-
-## 🧾 References
-- Database System Concepts – Silberschatz, Korth  
-- MySQL Documentation  
-- W3Schools & GeeksforGeeks  
+## 🛠️ Tech Stack
+| Component | Technology |
+|------------|-------------|
+| Frontend | HTML, CSS, JavaScript, Bootstrap |
+| Backend | Python Flask / PHP |
+| Database | MySQL |
+| Mobile App | Flutter (Dart) |
+| AI Module | Python (scikit-learn, pandas, numpy) |
+| Version Control | GitHub |
 
 ---
 
-> 💡 *This Hospital Management System aims to simplify hospital workflows and create a reliable, secure digital healthcare environment.*
+## ⚙️ Setup & Installation
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/your-repo/hospital-management-system.git
+Import the provided .sql file into MySQL to create the database.
+
+Run the backend server (Flask or PHP).
+
+Open the frontend website or run the Flutter app.
+
+Test data flow across modules to ensure integration.
+
+🚀 Features
+Centralized hospital data management
+
+Dual interface: Hospital Website and Patient Mobile App
+
+Secure data handling and relational database design
+
+AI-powered health prediction system
+
+Scalable and modular architecture
+
+🔮 Future Enhancements
+Role-based login system (Admin, Doctor, Patient)
+
+Automated appointment reminders (SMS/Email)
+
+Online payment integration for billing
+
+Advanced health analytics dashboard
+
+🧾 License
+This project is developed as part of an academic course on Database Management Systems and is intended for educational and research purposes.
