@@ -43,7 +43,7 @@ Additionally, it includes an **AI-based health suggestion module** that predicts
 
 ---
 
-## 🧩 System Modules
+### 🧩 System Modules
 | Module | Description |
 |--------|-------------|
 | **Patient Management** | Manage patient records, personal details, and visit history |
@@ -56,7 +56,7 @@ Additionally, it includes an **AI-based health suggestion module** that predicts
 
 ---
 
-## 🧠 AI Health Suggestion Module
+### 🧠 AI Health Suggestion Module
 - Built using **Python (scikit-learn, pandas, numpy)**  
 - Implements a **symptom-to-disease prediction model** (Decision Tree / Logistic Regression)  
 - Returns top 3 probable health conditions with preventive measures  
@@ -64,7 +64,7 @@ Additionally, it includes an **AI-based health suggestion module** that predicts
 
 ---
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 | Component | Technology |
 |------------|-------------|
 | Frontend | HTML, CSS, JavaScript, Bootstrap |
@@ -76,7 +76,7 @@ Additionally, it includes an **AI-based health suggestion module** that predicts
 
 ---
 
-## ⚙️ Setup & Installation
+### ⚙️ Setup & Installation
 1. Clone the repository  
    ```bash
    git clone https://github.com/your-repo/hospital-management-system.git
@@ -88,7 +88,7 @@ Open the frontend website or run the Flutter app.
 
 Test data flow across modules to ensure integration.
 
-🚀 Features
+### 🚀 Features
 Centralized hospital data management
 
 Dual interface: Hospital Website and Patient Mobile App
@@ -99,7 +99,7 @@ AI-powered health prediction system
 
 Scalable and modular architecture
 
-🔮 Future Enhancements
+### 🔮 Future Enhancements
 Role-based login system (Admin, Doctor, Patient)
 
 Automated appointment reminders (SMS/Email)
@@ -108,5 +108,5 @@ Online payment integration for billing
 
 Advanced health analytics dashboard
 
-🧾 License
+>🧾 License
 This project is developed as part of an academic course on Database Management Systems and is intended for educational and research purposes.
