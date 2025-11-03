@@ -87,7 +87,7 @@ Run the backend server (Flask or PHP).
 Open the frontend website or run the Flutter app.
 
 Test data flow across modules to ensure integration.
-
+---
 ### 🚀 Features
 Centralized hospital data management
 
@@ -98,6 +98,7 @@ Secure data handling and relational database design
 AI-powered health prediction system
 
 Scalable and modular architecture
+---
 
 ### 🔮 Future Enhancements
 Role-based login system (Admin, Doctor, Patient)
@@ -107,6 +108,7 @@ Automated appointment reminders (SMS/Email)
 Online payment integration for billing
 
 Advanced health analytics dashboard
+---
 
 >🧾 License
 This project is developed as part of an academic course on Database Management Systems and is intended for educational and research purposes.
