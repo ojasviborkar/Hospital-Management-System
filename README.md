@@ -87,6 +87,7 @@ Run the backend server (Flask or PHP).
 Open the frontend website or run the Flutter app.
 
 Test data flow across modules to ensure integration.
+
 ---
 ### 🚀 Features
 Centralized hospital data management
