@@ -98,6 +98,7 @@ Secure data handling and relational database design
 AI-powered health prediction system
 
 Scalable and modular architecture
+
 ---
 
 ### 🔮 Future Enhancements
@@ -108,6 +109,7 @@ Automated appointment reminders (SMS/Email)
 Online payment integration for billing
 
 Advanced health analytics dashboard
+
 ---
 
 >🧾 License
